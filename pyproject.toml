@@ -1,0 +1,24 @@
+[tool.poetry]
+name = "flask-app"
+version = "0.1.0"
+description = ""
+authors = ["yash3004 <yashsehgal9253@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+qdrant-client = "^1.10.1"
+flask = "^3.0.3"
+requests = "^2.32.3"
+pyyaml = "^6.0.1"
+spring-config-client = { git = "https://github.com/realbucksavage/spring-config-client.git", rev = "68b4e33" }
+
+
+
+
+[tool.poetry.scripts]
+flask_app = "flask_app:main"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

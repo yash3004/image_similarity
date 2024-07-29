@@ -1,0 +1,5 @@
+qdrant:
+  host: 172.26.3.17
+  port: 6333
+  api_key: hello_world
+
