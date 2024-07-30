@@ -12,6 +12,9 @@ flask = "^3.0.3"
 requests = "^2.32.3"
 pyyaml = "^6.0.1"
 spring-config-client = { git = "https://github.com/realbucksavage/spring-config-client.git", rev = "68b4e33" }
+pillow = "^10.4.0"
+datasets = "^2.20.0"
+sentence-transformers = "^3.0.1"
 
 
 
