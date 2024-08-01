@@ -1,7 +1,7 @@
 import os
 
 import qdrant_client
-from flask import Flask, request, blueprints
+from flask import Flask, request, blueprints,g
 import yaml
 
 from flask_app.backflow.q_client import get_client
@@ -22,8 +22,9 @@ def create_app(client: qdrant_client.QdrantClient):
 
 
 def main():
-    client = get_client()
-    app = create_app(client)
+    g.client = get_client()
+    app = create_app(g.client)
+    app.run(port=6000, debug=True, )
 
 
 if __name__ == '__main__':
